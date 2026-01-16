@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Dessert House</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo" id="logo">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span>The Dessert House</span>
+                </div>
+                <nav class="nav-menu">
+                    <a href="#" class="nav-link" data-page="about">About Us</a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="dessertsLink">Desserts <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-menu" id="dessertsDropdown">
+                            <a href="#" class="dropdown-item" data-page="all-desserts">All Desserts</a>
+                            <a href="#" class="dropdown-item" data-page="pastries">Pastry</a>
+                            <a href="#" class="dropdown-item" data-page="brownies">Brownies</a>
+                            <a href="#" class="dropdown-item" data-page="tarts">Tart</a>
+                            <a href="#" class="dropdown-item" data-page="tea-cake">Tea Cake</a>
+                            <a href="#" class="dropdown-item" data-page="cup-cake">Cup Cake</a>
+                            <a href="#" class="dropdown-item" data-page="jar-cake">Jar Cake</a>
+                            <a href="#" class="dropdown-item" data-page="combos">Combos</a>
+                        </div>
+                    </div>
+                    <a href="#" class="nav-link" data-page="contact">Contact</a>
+                </nav>
+                <div class="header-actions">
+                    <div class="search-box">
+                        <input type="text" placeholder="Search" id="searchInput">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <button class="btn-login" id="loginBtn">Log In / Sign Up</button>
+                </div>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Landing Page -->
+    <main id="landingPage" class="page active">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="carousel-container">
+                <div class="carousel-slides" id="carouselSlides">
+                    <div class="carousel-slide active">
+                        <img src="images/Component 2.png" alt="Dessert 1">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/Component 8.png" alt="Dessert 2">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/Component 18.png" alt="Dessert 3">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/Property 1=enchanting-butterscotch-pastries-past0213butt-AAA.png" alt="Dessert 4">
+                    </div>
+                    <div class="carousel-slide">
+                        <img src="images/sq-chocochips-oreo-jar-cake-jar249chocoreo-AA 1.png" alt="Dessert 5">
+                    </div>
+                </div>
+                <!-- Navigation Arrows -->
+                <button class="carousel-btn carousel-prev" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-btn carousel-next" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                <!-- Dots Indicator -->
+                <div class="carousel-dots">
+                    <span class="dot active" data-slide="0"></span>
+                    <span class="dot" data-slide="1"></span>
+                    <span class="dot" data-slide="2"></span>
+                    <span class="dot" data-slide="3"></span>
+                    <span class="dot" data-slide="4"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Products Section -->
+        <section class="products-section">
+            <div class="container">
+                <h2 class="section-title">Our Products</h2>
+                <div class="products-grid">
+                    <div class="product-category">
+                        <img src="images/Property 1=enchanting-butterscotch-pastries-past0213butt-AAA.png" alt="Pastries">
+                        <h3>Pastries</h3>
+                    </div>
+                    <div class="product-category">
+                        <img src="images/Component 10.png" alt="Brownies">
+                        <h3>Brownies</h3>
+                    </div>
+                    <div class="product-category">
+                        <img src="images/fruit-single-jar-cake-jar1286fruit-AAA 1.png" alt="Jar Cakes">
+                        <h3>Jar Cakes</h3>
+                    </div>
+                    <div class="product-category">
+                        <img src="images/Component 11.png" alt="Tea Cakes">
+                        <h3>Tea Cakes</h3>
+                    </div>
+                    <div class="product-category">
+                        <img src="images/Component 12.png" alt="Tarts">
+                        <h3>Tarts</h3>
+                    </div>
+                    <div class="product-category">
+                        <img src="images/Component 13.png" alt="Cup Cakes">
+                        <h3>Cup Cakes</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="testimonials-section">
+            <div class="container">
+                <h2 class="section-title">Testimonials</h2>
+                <div class="testimonial">
+                    <p>"The brownies are absolutely amazing! The quality and taste are outstanding. Highly recommend The Dessert House for all your sweet cravings."</p>
+                    <p class="testimonial-author">- Anmol Gaba, Chennai</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Best Seller Combos Section -->
+        <section class="combos-section">
+            <div class="container">
+                <h2 class="section-title">Best Seller Combos</h2>
+                <div class="combos-grid">
+                    <div class="combo-card">
+                        <img src="images/Component 14.png" alt="Assorted Brownies">
+                        <h3>Set of Six Assorted Brownies</h3>
+                    </div>
+                    <div class="combo-card">
+                        <img src="images/Component 15.png" alt="Assorted Pastries">
+                        <h3>Set of Six Assorted Pastries</h3>
+                    </div>
+                    <div class="combo-card">
+                        <img src="images/Component 16.png" alt="Assorted Cupcakes">
+                        <h3>Set of Six Assorted Cupcakes</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="cta-image">
+                <img src="images/Component 8.png" alt="Order Online">
+                <button class="cta-button">Order Online</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- About Us Page -->
+    <main id="aboutPage" class="page">
+        <div class="container">
+            <h1 class="page-title">About Us</h1>
+            <p class="about-slogan">Food of The Gods, Freshly Baked!</p>
+            <p class="about-intro">Since 2024, we've been serving our guests the best quality treats, traditionally made and presented with care.</p>
+            
+            <!-- Core Values Section -->
+            <section class="core-values">
+                <div class="values-grid">
+                    <div class="value-item">
+                        <h3>AUTHENTIC RECIPES</h3>
+                        <p>Our products are based on traditional home-style recipes using fresh ingredients.</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>BAKED WITH LOVE</h3>
+                        <p>Our passion for baking is poured into every recipe, serving smiles on a plate everyday.</p>
+                    </div>
+                    <div class="value-illustration">
+                        <div class="dessert-shop-illustration">
+                            <i class="fas fa-store"></i>
+                            <span>DESSERT</span>
+                        </div>
+                    </div>
+                    <div class="value-item">
+                        <h3>COMMITTED TO QUALITY</h3>
+                        <p>From our ingredients to our kitchen operations and guest services, we always prioritize quality.</p>
+                    </div>
+                    <div class="value-item">
+                        <h3>HONESTLY PRICED</h3>
+                        <p>We constantly strive to offer the best products at the right prices.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Company Narrative -->
+            <section class="company-narrative">
+                <p>The dessert house is a dedicated establishment for sweet foods and an indulgent range of offerings including brownies, cakes, desserts, chocolates, breads, and savouries.</p>
+                <p>It started in Karaikudi, Tamil Nadu, India, in 2024 and has grown into a Pan-India chain of patisseries with stores in over 10 cities. Our mission is to spread happiness by serving smiles on a plate.</p>
+            </section>
+
+            <!-- Key Metrics Section -->
+            <section class="key-metrics">
+                <div class="metrics-wrapper">
+                    <div class="metric-badge badge-red">
+                        <i class="fas fa-birthday-cake"></i>
+                        <h3>Founded in 2024</h3>
+                        <p>We as a brand believe in the power of wishes.</p>
+                    </div>
+                    <div class="metric-badge badge-white">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>10 Cities</h3>
+                    </div>
+                    <div class="metric-badge badge-red">
+                        <i class="fas fa-gift"></i>
+                        <h3>20+ Unique Desserts</h3>
+                    </div>
+                    <div class="metric-image">
+                        <img src="images/Component 18.png" alt="Desserts">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Brand Philosophy Section -->
+            <section class="brand-philosophy">
+                <h2 class="philosophy-question">Remember the days when you believed anything was possible?</h2>
+                <p>We bring back that wonder, sparking joy with every cake and fulfilling dreams. Our in-house R&D centre is dedicated to discovering new flavors and reimagining desserts, ensuring we stay at the forefront of innovation.</p>
+                <p>We are committed to creativity and quality, which has earned us industry recognition including the <strong>Swiggy Award for Best Dessert Brand</strong>.</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- All Desserts Page -->
+    <main id="allDessertsPage" class="page">
+        <div class="container">
+            <h1 class="page-title">All Desserts</h1>
+            <div class="desserts-grid">
+                <div class="dessert-card">
+                    <img src="images/Property 1=enchanting-butterscotch-pastries-past0213butt-AAA.png" alt="Butterscotch Pastries">
+                    <h3>Butterscotch Pastries</h3>
+                    <p class="price">Rs. 99/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/extravagant-blackforest-past0159blac-CCC_0 1.png" alt="Black Forest Pastry">
+                    <h3>Black Forest Pastry</h3>
+                    <p class="price">Rs. 119/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/mouth-watering-red-velvet-past0163redv-CCC 1.png" alt="Red Velvet Pastry">
+                    <h3>Red Velvet Pastry</h3>
+                    <p class="price">Rs. 149/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 19.png" alt="Kitkat Brownie">
+                    <h3>Kitkat Brownie</h3>
+                    <p class="price">Rs. 119/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 20.png" alt="Classic Walnut Brownie">
+                    <h3>Classic Walnut Brownie</h3>
+                    <p class="price">Rs. 99/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/sq-chocochips-oreo-jar-cake-jar249chocoreo-AA 1.png" alt="Oreo Single Jar Cake">
+                    <h3>Oreo Single Jar Cake</h3>
+                    <p class="price">Rs. 149/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/fruit-single-jar-cake-jar1286fruit-AAA 1.png" alt="Fruit Single Jar Cake">
+                    <h3>Fruit Single Jar Cake</h3>
+                    <p class="price">Rs. 149/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 21.png" alt="Lemon Tart">
+                    <h3>Lemon Tart</h3>
+                    <p class="price">Rs. 150/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 22.png" alt="Chocolate Tart">
+                    <h3>Chocolate Tart</h3>
+                    <p class="price">Rs. 150/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 23.png" alt="Kitkat Cupcakes">
+                    <h3>Kitkat Cupcakes</h3>
+                    <p class="price">Rs. 119/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 24.png" alt="Oreo Cream Cupcake">
+                    <h3>Oreo Cream Cupcake</h3>
+                    <p class="price">Rs. 119/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/squ-sweet-n-fresh-pineapple-pastry-past2505pine-E 1.png" alt="Pineapple Cupcake">
+                    <h3>Pineapple Cupcake</h3>
+                    <p class="price">Rs. 99/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 25.png" alt="Double Chocolate Brownie">
+                    <h3>Double Chocolate Brownie</h3>
+                    <p class="price">Rs. 119/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 14.png" alt="Set of Six Assorted Brownie">
+                    <h3>Set of Six Assorted Brownie</h3>
+                    <p class="price">Rs. 549/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 16.png" alt="Set of Six Multi Flavored Cupcakes">
+                    <h3>Set of Six Multi Flavored Cupcakes</h3>
+                    <p class="price">Rs. 549/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 26.png" alt="Dense Loaf Tea Cake">
+                    <h3>Dense Loaf Tea Cake</h3>
+                    <p class="price">Rs. 299/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 27.png" alt="Marble Tea Cake">
+                    <h3>Marble Tea Cake</h3>
+                    <p class="price">Rs. 299/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 28.png" alt="Multi Grain Tea Cake">
+                    <h3>Multi Grain Tea Cake</h3>
+                    <p class="price">Rs. 299/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 15.png" alt="Set of Six Assorted Pastries">
+                    <h3>Set of Six Assorted Pastries</h3>
+                    <p class="price">Rs. 499/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Contact Page -->
+    <main id="contactPage" class="page">
+        <div class="container">
+            <h1 class="page-title">Contact</h1>
+            <p class="contact-intro">We would love to hear from you. Share your thoughts and queries with us!</p>
+            <div class="contact-wrapper">
+                <div class="contact-form-section">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="mobile">Mobile No *</label>
+                            <input type="tel" id="mobile" name="mobile" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email ID *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">City *</label>
+                            <input type="text" id="city" name="city" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Submit</button>
+                    </form>
+                </div>
+                <div class="contact-info-section">
+                    <div class="map-thumbnail">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h2>The Dessert House</h2>
+                    <div class="info-item">
+                        <strong>Registered Address:</strong>
+                        <p>No. 123, Karaikudi, Tamil Nadu, India.</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Branches:</strong>
+                        <p>Sivagangai, Pudukottai, Madurai, Tiruchirapalli, Thanjavur, Thirunelveli, Vilupuram, Chennai, Coimbatore.</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Phone:</strong>
+                        <p>+91-987 654 3210</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>Email:</strong>
+                        <p>contact@thedesserthouse.in</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Brownies Page -->
+    <main id="browniesPage" class="page">
+        <div class="container">
+            <h1 class="page-title">Brownies</h1>
+            <div class="desserts-grid">
+                <div class="dessert-card">
+                    <img src="images/Component 19.png" alt="Kitkat Brownie">
+                    <h3>Kitkat Brownie</h3>
+                    <p class="price">Rs. 119/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 20.png" alt="Classic Walnut Brownie">
+                    <h3>Classic Walnut Brownie</h3>
+                    <p class="price">Rs. 119/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 25.png" alt="Double Chocolate Brownie">
+                    <h3>Double Chocolate Brownie</h3>
+                    <p class="price">Rs. 119/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 19.png" alt="Kitkat Brownie">
+                    <h3>Kitkat Brownie</h3>
+                    <p class="price">Rs. 119/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 20.png" alt="Classic Walnut Brownie">
+                    <h3>Classic Walnut Brownie</h3>
+                    <p class="price">Rs. 119/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 25.png" alt="Double Chocolate Brownie">
+                    <h3>Double Chocolate Brownie</h3>
+                    <p class="price">Rs. 119/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Combos Page -->
+    <main id="combosPage" class="page">
+        <div class="container">
+            <h1 class="page-title">Combos</h1>
+            <div class="desserts-grid">
+                <div class="dessert-card">
+                    <img src="images/Component 14.png" alt="Set of Six Assorted Brownie">
+                    <h3>Set of Six Assorted Brownie</h3>
+                    <p class="price">Rs. 749/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 15.png" alt="Set of Six Assorted Pastries">
+                    <h3>Set of Six Assorted Pastries</h3>
+                    <p class="price">Rs. 549/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 16.png" alt="Set of Six Multi Flavored Cupcakes">
+                    <h3>Set of Six Multi Flavored Cupcakes</h3>
+                    <p class="price">Rs. 499/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 14.png" alt="Set of Six Assorted Brownie">
+                    <h3>Set of Six Assorted Brownie</h3>
+                    <p class="price">Rs. 749/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 15.png" alt="Set of Six Assorted Pastries">
+                    <h3>Set of Six Assorted Pastries</h3>
+                    <p class="price">Rs. 549/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 16.png" alt="Set of Six Multi Flavored Cupcakes">
+                    <h3>Set of Six Multi Flavored Cupcakes</h3>
+                    <p class="price">Rs. 499/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Cup Cakes Page -->
+    <main id="cupCakePage" class="page">
+        <div class="container">
+            <h1 class="page-title">Cup Cakes</h1>
+            <div class="desserts-grid">
+                <div class="dessert-card">
+                    <img src="images/Component 23.png" alt="Kitkat Cupcakes">
+                    <h3>Kitkat Cupcakes</h3>
+                    <p class="price">Rs. 99/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 24.png" alt="Oreo Cream Cupcake">
+                    <h3>Oreo Cream Cupcake</h3>
+                    <p class="price">Rs. 99/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/squ-sweet-n-fresh-pineapple-pastry-past2505pine-E 1.png" alt="Pineapple Cupcake">
+                    <h3>Pineapple Cupcake</h3>
+                    <p class="price">Rs. 99/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 23.png" alt="Kitkat Cupcakes">
+                    <h3>Kitkat Cupcakes</h3>
+                    <p class="price">Rs. 99/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 24.png" alt="Oreo Cream Cupcake">
+                    <h3>Oreo Cream Cupcake</h3>
+                    <p class="price">Rs. 99/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/squ-sweet-n-fresh-pineapple-pastry-past2505pine-E 1.png" alt="Pineapple Cupcake">
+                    <h3>Pineapple Cupcake</h3>
+                    <p class="price">Rs. 99/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Jar Cakes Page -->
+    <main id="jarCakePage" class="page">
+        <div class="container">
+            <h1 class="page-title">Jar Cakes</h1>
+            <div class="desserts-grid">
+                <div class="dessert-card">
+                    <img src="images/sq-chocochips-oreo-jar-cake-jar249chocoreo-AA 1.png" alt="Oreo Single Jar Cake">
+                    <h3>Oreo Single Jar Cake</h3>
+                    <p class="price">Rs. 149/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/fruit-single-jar-cake-jar1286fruit-AAA 1.png" alt="Fruit Single Jar Cake">
+                    <h3>Fruit Single Jar Cake</h3>
+                    <p class="price">Rs. 149/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/red-velvet-single-jar-cake-jar1288redv-AAA 1.png" alt="Red Velvet Single Jar Cake">
+                    <h3>Red Velvet Single Jar Cake</h3>
+                    <p class="price">Rs. 149/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/sq-chocochips-oreo-jar-cake-jar249chocoreo-AA 1.png" alt="Oreo Single Jar Cake">
+                    <h3>Oreo Single Jar Cake</h3>
+                    <p class="price">Rs. 149/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/fruit-single-jar-cake-jar1286fruit-AAA 1.png" alt="Fruit Single Jar Cake">
+                    <h3>Fruit Single Jar Cake</h3>
+                    <p class="price">Rs. 149/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/red-velvet-single-jar-cake-jar1288redv-AAA 1.png" alt="Red Velvet Single Jar Cake">
+                    <h3>Red Velvet Single Jar Cake</h3>
+                    <p class="price">Rs. 149/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pastries Page -->
+    <main id="pastriesPage" class="page">
+        <div class="container">
+            <h1 class="page-title">Pastries</h1>
+            <div class="desserts-grid">
+                <div class="dessert-card">
+                    <img src="images/Property 1=enchanting-butterscotch-pastries-past0213butt-AAA.png" alt="Butterscotch Pastries">
+                    <h3>Butterscotch Pastries</h3>
+                    <p class="price">Rs. 99/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/extravagant-blackforest-past0159blac-CCC_0 1.png" alt="Black Forest Pastry">
+                    <h3>Black Forest Pastry</h3>
+                    <p class="price">Rs. 99/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/mouth-watering-red-velvet-past0163redv-CCC 1.png" alt="Red Velvet Pastry">
+                    <h3>Red Velvet Pastry</h3>
+                    <p class="price">Rs. 99/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Property 1=enchanting-butterscotch-pastries-past0213butt-AAA.png" alt="Butterscotch Pastries">
+                    <h3>Butterscotch Pastries</h3>
+                    <p class="price">Rs. 99/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/extravagant-blackforest-past0159blac-CCC_0 1.png" alt="Black Forest Pastry">
+                    <h3>Black Forest Pastry</h3>
+                    <p class="price">Rs. 99/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/mouth-watering-red-velvet-past0163redv-CCC 1.png" alt="Red Velvet Pastry">
+                    <h3>Red Velvet Pastry</h3>
+                    <p class="price">Rs. 99/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Tarts Page -->
+    <main id="tartsPage" class="page">
+        <div class="container">
+            <h1 class="page-title">Tarts</h1>
+            <div class="desserts-grid">
+                <div class="dessert-card">
+                    <img src="images/Component 29.png" alt="Banoffee High Tart">
+                    <h3>Banoffee High Tart</h3>
+                    <p class="price">Rs. 150/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 21.png" alt="Lemon Tart">
+                    <h3>Lemon Tart</h3>
+                    <p class="price">Rs. 150/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 22.png" alt="Chocolate Tart">
+                    <h3>Chocolate Tart</h3>
+                    <p class="price">Rs. 150/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 29.png" alt="Banoffee High Tart">
+                    <h3>Banoffee High Tart</h3>
+                    <p class="price">Rs. 150/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 21.png" alt="Lemon Tart">
+                    <h3>Lemon Tart</h3>
+                    <p class="price">Rs. 150/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 22.png" alt="Chocolate Tart">
+                    <h3>Chocolate Tart</h3>
+                    <p class="price">Rs. 150/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Tea Cakes Page -->
+    <main id="teaCakePage" class="page">
+        <div class="container">
+            <h1 class="page-title">Tea Cakes</h1>
+            <div class="desserts-grid">
+                <div class="dessert-card">
+                    <img src="images/Component 26.png" alt="Dense Loaf Tea Cake">
+                    <h3>Dense Loaf Tea Cake</h3>
+                    <p class="price">Rs. 299/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 27.png" alt="Marble Tea Cake">
+                    <h3>Marble Tea Cake</h3>
+                    <p class="price">Rs. 299/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 28.png" alt="Multi Grain Tea Cake">
+                    <h3>Multi Grain Tea Cake</h3>
+                    <p class="price">Rs. 299/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 26.png" alt="Dense Loaf Tea Cake">
+                    <h3>Dense Loaf Tea Cake</h3>
+                    <p class="price">Rs. 299/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 27.png" alt="Marble Tea Cake">
+                    <h3>Marble Tea Cake</h3>
+                    <p class="price">Rs. 299/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+                <div class="dessert-card">
+                    <img src="images/Component 28.png" alt="Multi Grain Tea Cake">
+                    <h3>Multi Grain Tea Cake</h3>
+                    <p class="price">Rs. 299/-</p>
+                    <button class="btn-order">Order Online</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Login/Sign Up Modal -->
+    <div class="modal-overlay" id="loginModal">
+        <div class="modal-content">
+            <button class="modal-close" id="closeModal">
+                <i class="fas fa-times"></i>
+            </button>
+            <h2>Login / Sign Up</h2>
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="loginEmail">Enter Email ID</label>
+                    <input type="email" id="loginEmail" name="email" required>
+                </div>
+                <a href="#" class="mobile-link">With Mobile</a>
+                <button type="submit" class="btn-otp">Get OTP <i class="fas fa-arrow-right"></i></button>
+                <p class="terms-text">By continuing I agree to The Dessert House's <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.</p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <i class="fas fa-birthday-cake"></i>
+                    <span>The Dessert House</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick links</h4>
+                        <ul>
+                            <li><a href="#" data-page="about">About Us</a></li>
+                            <li><a href="#" data-page="all-desserts">Desserts</a></li>
+                            <li><a href="#" data-page="contact">Contact</a></li>
+                            <li><a href="#">Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms and Conditions</a></li>
+                            <li><a href="#">Refund Policy</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <div class="contact-info">
+                            <p><i class="fas fa-phone"></i> +91 987 654 3210</p>
+                            <p><i class="fas fa-envelope"></i> Contact@thedesserthouse.in</p>
+                            <div class="social-icons">
+                                <a href="#"><i class="fab fa-youtube"></i></a>
+                                <a href="#"><i class="fab fa-facebook"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>2024@thedesserthousein</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
